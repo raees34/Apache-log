@@ -7,6 +7,6 @@ Please feel free to contribute any items that should be included
 
 Installation & Setup
 
-1. gitclone
+1. gitclone https://github.com/raees34/Apache-log.git
 2. chmod +x minipro.sh
 3. ./minipro.sh
