@@ -28,7 +28,7 @@ echo $(ColorGreen " Author : raees   \n ");
 
 awk '{print $1}' accesslog.txt > usrip.txt # gatharing ip's from log file
 echo "Start!"
-for (( i=0; i<=20; i++));# loop for shedule time
+for (( i=0; i<=20; i++));# ip pick
  do 
   while read p;          
     do
@@ -37,7 +37,7 @@ for (( i=0; i<=20; i++));# loop for shedule time
     echo "ip dont matching"
 fi
     
-    curl "https://ipstack.com/?utm_source=any-api&utm_medium=$p" >> userdetail.txt # curl api data
+    curl "https://ipapi.co/$p/json/" >> userdetail.txt # curl api data
     echo "$p"
     done <usrip.txt
 $i ;sleep 60; # shedule timer for 1 minute
