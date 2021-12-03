@@ -40,6 +40,6 @@ fi
     curl "https://ipapi.co/$p/json/" >> userdetail.json # curl api data
     echo "$p"
     done <usrip.txt
-$i ;sleep 60; # shedule timer for 1 minute
+    sleep 60; # shedule timer for 1 minute
 done
 
